@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
-const port =  process.env.PORT || 8000;
+const port =  8001;
 const mongoose = require("mongoose");
 const cors = require("cors");
 const User = require("./models/registration");
@@ -53,6 +53,6 @@ mongoose
     console.log(err);
   });
 
-app.listen(2000, () => {
-  console.log("server is running on port" + " " + 2000);
+app.listen(port, () => {
+  console.log("server is running on port" + " " + port);
 });
