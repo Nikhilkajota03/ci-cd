@@ -36,7 +36,7 @@ app.use("/api/auct",aucte);
 
 app.use("/",(req,res)=>{
 
- res.send("server home");
+ res.send("server home on port 5000");
 
 })
 
